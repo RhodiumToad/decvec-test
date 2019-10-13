@@ -1,0 +1,343 @@
+
+[0] Code Region - foo
+
+Iterations:        1
+Instructions:      71
+Total Cycles:      46
+Total uOps:        74
+
+Dispatch Width:    6
+uOps Per Cycle:    1.61
+IPC:               1.54
+Block RThroughput: 23.0
+
+
+Instruction Info:
+[1]: #uOps
+[2]: Latency
+[3]: RThroughput
+[4]: MayLoad
+[5]: MayStore
+[6]: HasSideEffects (U)
+
+[1]    [2]    [3]    [4]    [5]    [6]    Instructions:
+ 1      1     0.25                        movl	$3518437209, %eax
+ 1      1     1.00                        vmovq	%rax, %xmm0
+ 1      1     1.00                        vpbroadcastd	%xmm0, %xmm9
+ 1      1     0.25                        movabsq	$42949673025535, %rax
+ 1      1     1.00                        vmovq	%rax, %xmm0
+ 1      1     1.00                        vpbroadcastq	%xmm0, %xmm10
+ 1      1     0.25                        movabsq	$-9223343886951898939, %rax
+ 1      1     1.00                        vmovq	%rax, %xmm0
+ 1      1     0.33                        vxorps	%xmm7, %xmm7, %xmm7
+ 1      1     1.00                        vpunpcklwd	%xmm7, %xmm0, %xmm8
+ 1      1     0.25                        movl	$-858993460, %eax
+ 1      1     1.00                        vmovd	%eax, %xmm0
+ 1      1     1.00                        vpbroadcastd	%xmm0, %xmm6
+ 1      1     0.50                        vpcmpeqd	%xmm1, %xmm1, %xmm1
+ 1      1     0.33                        vpsubw	%xmm1, %xmm7, %xmm2
+ 1      1     0.50                        vpsllw	$3, %xmm2, %xmm0
+ 1      1     0.33                        vpxor	%xmm1, %xmm0, %xmm3
+ 1      1     0.25                        movl	$-1546116923, %eax
+ 1      1     1.00                        vmovd	%eax, %xmm0
+ 1      1     1.00                        vpbroadcastd	%xmm0, %xmm11
+ 1      1     0.33                        vpxor	%xmm3, %xmm2, %xmm4
+ 1      1     0.33                        vpaddb	%xmm6, %xmm6, %xmm0
+ 1      1     0.33                        vpaddb	%xmm0, %xmm0, %xmm0
+ 1      1     0.50                        vpslld	$16, %xmm1, %xmm1
+ 1      1     0.33                        vpand	%xmm6, %xmm1, %xmm6
+ 1      1     0.33                        vpsubw	%xmm1, %xmm6, %xmm5
+ 1      1     0.33                        vpandn	%xmm4, %xmm1, %xmm4
+ 1      1     0.33                        vpand	%xmm2, %xmm1, %xmm2
+ 1      1     0.33                        vpor	%xmm2, %xmm4, %xmm4
+ 1      1     0.33                        vpxor	%xmm3, %xmm4, %xmm6
+ 1      1     0.25                        movabsq	$72058143794266113, %rax
+ 1      1     1.00                        vmovq	%rax, %xmm2
+ 1      1     1.00                        vpunpcklwd	%xmm7, %xmm2, %xmm2
+ 1      1     1.00                        vmovd	%edi, %xmm3
+ 1      1     1.00                        vmovd	%edx, %xmm7
+ 1      1     1.00                        vpunpcklqdq	%xmm3, %xmm7, %xmm3
+ 1      4     0.50                        vpmuludq	%xmm3, %xmm9, %xmm7
+ 1      1     0.50                        vpsrlq	$13, %xmm7, %xmm7
+ 1      1     1.00                        vpshufd	$245, %xmm7, %xmm7
+ 1      4     0.50                        vpmaddwd	%xmm10, %xmm7, %xmm7
+ 1      1     0.50                        vpsllq	$32, %xmm3, %xmm3
+ 1      1     0.33                        vpsubd	%xmm7, %xmm3, %xmm3
+ 1      1     0.50                        vpslld	$17, %xmm3, %xmm7
+ 1      1     0.33                        vpor	%xmm3, %xmm7, %xmm3
+ 1      1     1.00                        vmovd	%r8d, %xmm7
+ 1      1     1.00                        vpbroadcastd	%xmm7, %xmm7
+ 1      4     0.50                        vpmulhuw	%xmm8, %xmm7, %xmm7
+ 1      4     0.50                        vpmaddwd	%xmm2, %xmm7, %xmm2
+ 1      1     0.50                        vpsrld	$8, %xmm2, %xmm2
+ 1      1     1.00                        vpslldq	$6, %xmm2, %xmm7
+ 1      1     0.33                        vpor	%xmm2, %xmm7, %xmm2
+ 1      4     0.50                        vpmaddwd	%xmm6, %xmm2, %xmm2
+ 1      1     0.33                        vpor	%xmm0, %xmm2, %xmm2
+ 1      4     0.50                        vpmulhuw	%xmm11, %xmm3, %xmm7
+ 1      1     0.50                        vpsrlw	$7, %xmm7, %xmm7
+ 1      4     0.50                        vpmulhuw	%xmm5, %xmm3, %xmm5
+ 1      1     0.50                        vpsrlw	$4, %xmm5, %xmm5
+ 1      1     1.00                        vpblendw	$170, %xmm5, %xmm3, %xmm3
+ 1      4     0.50                        vpmaddwd	%xmm4, %xmm7, %xmm4
+ 1      1     0.50                        vpslld	$8, %xmm4, %xmm4
+ 1      4     0.50                        vpmaddwd	%xmm6, %xmm3, %xmm5
+ 1      1     0.50                        vpslld	$24, %xmm5, %xmm5
+ 1      1     0.33                        vpor	%xmm4, %xmm5, %xmm4
+ 1      1     0.33                        vpand	%xmm1, %xmm3, %xmm1
+ 1      4     0.50                        vpmullw	%xmm6, %xmm7, %xmm3
+ 1      1     0.33                        vpaddw	%xmm3, %xmm1, %xmm1
+ 1      1     0.33                        vpor	%xmm1, %xmm0, %xmm0
+ 2      3     1.00                        vpextrw	$2, %xmm2, %edx
+ 2      3     1.00                        vpextrw	$4, %xmm2, %ecx
+ 1      1     0.33                        vpor	%xmm4, %xmm0, %xmm0
+ 2      3     1.00                        vpextrw	$6, %xmm2, %eax
+
+
+Resources:
+[0]   - SKLDivider
+[1]   - SKLFPDivider
+[2]   - SKLPort0
+[3]   - SKLPort1
+[4]   - SKLPort2
+[5]   - SKLPort3
+[6]   - SKLPort4
+[7]   - SKLPort5
+[8]   - SKLPort6
+[9]   - SKLPort7
+
+
+Resource pressure per iteration:
+[0]    [1]    [2]    [3]    [4]    [5]    [6]    [7]    [8]    [9]    
+ -      -     21.00  22.00   -      -      -     28.00  3.00    -     
+
+Resource pressure by instruction:
+[0]    [1]    [2]    [3]    [4]    [5]    [6]    [7]    [8]    [9]    Instructions:
+ -      -      -      -      -      -      -      -     1.00    -     movl	$3518437209, %eax
+ -      -      -      -      -      -      -     1.00    -      -     vmovq	%rax, %xmm0
+ -      -      -      -      -      -      -     1.00    -      -     vpbroadcastd	%xmm0, %xmm9
+ -      -      -      -      -      -      -     1.00    -      -     movabsq	$42949673025535, %rax
+ -      -      -      -      -      -      -     1.00    -      -     vmovq	%rax, %xmm0
+ -      -      -      -      -      -      -     1.00    -      -     vpbroadcastq	%xmm0, %xmm10
+ -      -      -     1.00    -      -      -      -      -      -     movabsq	$-9223343886951898939, %rax
+ -      -      -      -      -      -      -     1.00    -      -     vmovq	%rax, %xmm0
+ -      -     1.00    -      -      -      -      -      -      -     vxorps	%xmm7, %xmm7, %xmm7
+ -      -      -      -      -      -      -     1.00    -      -     vpunpcklwd	%xmm7, %xmm0, %xmm8
+ -      -      -      -      -      -      -      -     1.00    -     movl	$-858993460, %eax
+ -      -      -      -      -      -      -     1.00    -      -     vmovd	%eax, %xmm0
+ -      -      -      -      -      -      -     1.00    -      -     vpbroadcastd	%xmm0, %xmm6
+ -      -      -     1.00    -      -      -      -      -      -     vpcmpeqd	%xmm1, %xmm1, %xmm1
+ -      -      -     1.00    -      -      -      -      -      -     vpsubw	%xmm1, %xmm7, %xmm2
+ -      -      -     1.00    -      -      -      -      -      -     vpsllw	$3, %xmm2, %xmm0
+ -      -      -     1.00    -      -      -      -      -      -     vpxor	%xmm1, %xmm0, %xmm3
+ -      -     1.00    -      -      -      -      -      -      -     movl	$-1546116923, %eax
+ -      -      -      -      -      -      -     1.00    -      -     vmovd	%eax, %xmm0
+ -      -      -      -      -      -      -     1.00    -      -     vpbroadcastd	%xmm0, %xmm11
+ -      -     1.00    -      -      -      -      -      -      -     vpxor	%xmm3, %xmm2, %xmm4
+ -      -      -     1.00    -      -      -      -      -      -     vpaddb	%xmm6, %xmm6, %xmm0
+ -      -      -     1.00    -      -      -      -      -      -     vpaddb	%xmm0, %xmm0, %xmm0
+ -      -     1.00    -      -      -      -      -      -      -     vpslld	$16, %xmm1, %xmm1
+ -      -     1.00    -      -      -      -      -      -      -     vpand	%xmm6, %xmm1, %xmm6
+ -      -     1.00    -      -      -      -      -      -      -     vpsubw	%xmm1, %xmm6, %xmm5
+ -      -      -     1.00    -      -      -      -      -      -     vpandn	%xmm4, %xmm1, %xmm4
+ -      -     1.00    -      -      -      -      -      -      -     vpand	%xmm2, %xmm1, %xmm2
+ -      -     1.00    -      -      -      -      -      -      -     vpor	%xmm2, %xmm4, %xmm4
+ -      -      -     1.00    -      -      -      -      -      -     vpxor	%xmm3, %xmm4, %xmm6
+ -      -      -      -      -      -      -      -     1.00    -     movabsq	$72058143794266113, %rax
+ -      -      -      -      -      -      -     1.00    -      -     vmovq	%rax, %xmm2
+ -      -      -      -      -      -      -     1.00    -      -     vpunpcklwd	%xmm7, %xmm2, %xmm2
+ -      -      -      -      -      -      -     1.00    -      -     vmovd	%edi, %xmm3
+ -      -      -      -      -      -      -     1.00    -      -     vmovd	%edx, %xmm7
+ -      -      -      -      -      -      -     1.00    -      -     vpunpcklqdq	%xmm3, %xmm7, %xmm3
+ -      -     1.00    -      -      -      -      -      -      -     vpmuludq	%xmm3, %xmm9, %xmm7
+ -      -      -     1.00    -      -      -      -      -      -     vpsrlq	$13, %xmm7, %xmm7
+ -      -      -      -      -      -      -     1.00    -      -     vpshufd	$245, %xmm7, %xmm7
+ -      -     1.00    -      -      -      -      -      -      -     vpmaddwd	%xmm10, %xmm7, %xmm7
+ -      -      -     1.00    -      -      -      -      -      -     vpsllq	$32, %xmm3, %xmm3
+ -      -     1.00    -      -      -      -      -      -      -     vpsubd	%xmm7, %xmm3, %xmm3
+ -      -     1.00    -      -      -      -      -      -      -     vpslld	$17, %xmm3, %xmm7
+ -      -      -      -      -      -      -     1.00    -      -     vpor	%xmm3, %xmm7, %xmm3
+ -      -      -      -      -      -      -     1.00    -      -     vmovd	%r8d, %xmm7
+ -      -      -      -      -      -      -     1.00    -      -     vpbroadcastd	%xmm7, %xmm7
+ -      -     1.00    -      -      -      -      -      -      -     vpmulhuw	%xmm8, %xmm7, %xmm7
+ -      -      -     1.00    -      -      -      -      -      -     vpmaddwd	%xmm2, %xmm7, %xmm2
+ -      -      -     1.00    -      -      -      -      -      -     vpsrld	$8, %xmm2, %xmm2
+ -      -      -      -      -      -      -     1.00    -      -     vpslldq	$6, %xmm2, %xmm7
+ -      -      -     1.00    -      -      -      -      -      -     vpor	%xmm2, %xmm7, %xmm2
+ -      -     1.00    -      -      -      -      -      -      -     vpmaddwd	%xmm6, %xmm2, %xmm2
+ -      -      -      -      -      -      -     1.00    -      -     vpor	%xmm0, %xmm2, %xmm2
+ -      -      -     1.00    -      -      -      -      -      -     vpmulhuw	%xmm11, %xmm3, %xmm7
+ -      -      -     1.00    -      -      -      -      -      -     vpsrlw	$7, %xmm7, %xmm7
+ -      -     1.00    -      -      -      -      -      -      -     vpmulhuw	%xmm5, %xmm3, %xmm5
+ -      -     1.00    -      -      -      -      -      -      -     vpsrlw	$4, %xmm5, %xmm5
+ -      -      -      -      -      -      -     1.00    -      -     vpblendw	$170, %xmm5, %xmm3, %xmm3
+ -      -      -     1.00    -      -      -      -      -      -     vpmaddwd	%xmm4, %xmm7, %xmm4
+ -      -      -     1.00    -      -      -      -      -      -     vpslld	$8, %xmm4, %xmm4
+ -      -      -     1.00    -      -      -      -      -      -     vpmaddwd	%xmm6, %xmm3, %xmm5
+ -      -      -     1.00    -      -      -      -      -      -     vpslld	$24, %xmm5, %xmm5
+ -      -      -     1.00    -      -      -      -      -      -     vpor	%xmm4, %xmm5, %xmm4
+ -      -      -      -      -      -      -     1.00    -      -     vpand	%xmm1, %xmm3, %xmm1
+ -      -     1.00    -      -      -      -      -      -      -     vpmullw	%xmm6, %xmm7, %xmm3
+ -      -      -     1.00    -      -      -      -      -      -     vpaddw	%xmm3, %xmm1, %xmm1
+ -      -      -      -      -      -      -     1.00    -      -     vpor	%xmm1, %xmm0, %xmm0
+ -      -     1.00    -      -      -      -     1.00    -      -     vpextrw	$2, %xmm2, %edx
+ -      -     1.00    -      -      -      -     1.00    -      -     vpextrw	$4, %xmm2, %ecx
+ -      -     1.00    -      -      -      -      -      -      -     vpor	%xmm4, %xmm0, %xmm0
+ -      -     1.00    -      -      -      -     1.00    -      -     vpextrw	$6, %xmm2, %eax
+
+
+Timeline view:
+                    0123456789          0123456789      
+Index     0123456789          0123456789          012345
+
+[0,0]     DeER .    .    .    .    .    .    .    .    .   movl	$3518437209, %eax
+[0,1]     D=eER.    .    .    .    .    .    .    .    .   vmovq	%rax, %xmm0
+[0,2]     D==eER    .    .    .    .    .    .    .    .   vpbroadcastd	%xmm0, %xmm9
+[0,3]     DeE--R    .    .    .    .    .    .    .    .   movabsq	$42949673025535, %rax
+[0,4]     D===eER   .    .    .    .    .    .    .    .   vmovq	%rax, %xmm0
+[0,5]     D====eER  .    .    .    .    .    .    .    .   vpbroadcastq	%xmm0, %xmm10
+[0,6]     .DeE---R  .    .    .    .    .    .    .    .   movabsq	$-9223343886951898939, %rax
+[0,7]     .D====eER .    .    .    .    .    .    .    .   vmovq	%rax, %xmm0
+[0,8]     .DeE----R .    .    .    .    .    .    .    .   vxorps	%xmm7, %xmm7, %xmm7
+[0,9]     .D=====eER.    .    .    .    .    .    .    .   vpunpcklwd	%xmm7, %xmm0, %xmm8
+[0,10]    .DeE-----R.    .    .    .    .    .    .    .   movl	$-858993460, %eax
+[0,11]    .D======eER    .    .    .    .    .    .    .   vmovd	%eax, %xmm0
+[0,12]    . D======eER   .    .    .    .    .    .    .   vpbroadcastd	%xmm0, %xmm6
+[0,13]    . DeE------R   .    .    .    .    .    .    .   vpcmpeqd	%xmm1, %xmm1, %xmm1
+[0,14]    . D=eE-----R   .    .    .    .    .    .    .   vpsubw	%xmm1, %xmm7, %xmm2
+[0,15]    . D==eE----R   .    .    .    .    .    .    .   vpsllw	$3, %xmm2, %xmm0
+[0,16]    . D===eE---R   .    .    .    .    .    .    .   vpxor	%xmm1, %xmm0, %xmm3
+[0,17]    . DeE------R   .    .    .    .    .    .    .   movl	$-1546116923, %eax
+[0,18]    .  D======eER  .    .    .    .    .    .    .   vmovd	%eax, %xmm0
+[0,19]    .  D=======eER .    .    .    .    .    .    .   vpbroadcastd	%xmm0, %xmm11
+[0,20]    .  D===eE----R .    .    .    .    .    .    .   vpxor	%xmm3, %xmm2, %xmm4
+[0,21]    .  D======eE-R .    .    .    .    .    .    .   vpaddb	%xmm6, %xmm6, %xmm0
+[0,22]    .  D=======eER .    .    .    .    .    .    .   vpaddb	%xmm0, %xmm0, %xmm0
+[0,23]    .  DeE-------R .    .    .    .    .    .    .   vpslld	$16, %xmm1, %xmm1
+[0,24]    .   D=====eE-R .    .    .    .    .    .    .   vpand	%xmm6, %xmm1, %xmm6
+[0,25]    .   D======eER .    .    .    .    .    .    .   vpsubw	%xmm1, %xmm6, %xmm5
+[0,26]    .   D===eE---R .    .    .    .    .    .    .   vpandn	%xmm4, %xmm1, %xmm4
+[0,27]    .   DeE------R .    .    .    .    .    .    .   vpand	%xmm2, %xmm1, %xmm2
+[0,28]    .   D====eE--R .    .    .    .    .    .    .   vpor	%xmm2, %xmm4, %xmm4
+[0,29]    .   D=======eER.    .    .    .    .    .    .   vpxor	%xmm3, %xmm4, %xmm6
+[0,30]    .    DeE------R.    .    .    .    .    .    .   movabsq	$72058143794266113, %rax
+[0,31]    .    D======eER.    .    .    .    .    .    .   vmovq	%rax, %xmm2
+[0,32]    .    D=======eER    .    .    .    .    .    .   vpunpcklwd	%xmm7, %xmm2, %xmm2
+[0,33]    .    D========eER   .    .    .    .    .    .   vmovd	%edi, %xmm3
+[0,34]    .    D=========eER  .    .    .    .    .    .   vmovd	%edx, %xmm7
+[0,35]    .    D==========eER .    .    .    .    .    .   vpunpcklqdq	%xmm3, %xmm7, %xmm3
+[0,36]    .    .D==========eeeeER  .    .    .    .    .   vpmuludq	%xmm3, %xmm9, %xmm7
+[0,37]    .    .D==============eER .    .    .    .    .   vpsrlq	$13, %xmm7, %xmm7
+[0,38]    .    .D===============eER.    .    .    .    .   vpshufd	$245, %xmm7, %xmm7
+[0,39]    .    .D================eeeeER .    .    .    .   vpmaddwd	%xmm10, %xmm7, %xmm7
+[0,40]    .    .D==========eE---------R .    .    .    .   vpsllq	$32, %xmm3, %xmm3
+[0,41]    .    .D====================eER.    .    .    .   vpsubd	%xmm7, %xmm3, %xmm3
+[0,42]    .    . D====================eER    .    .    .   vpslld	$17, %xmm3, %xmm7
+[0,43]    .    . D=====================eER   .    .    .   vpor	%xmm3, %xmm7, %xmm3
+[0,44]    .    . D=========eE------------R   .    .    .   vmovd	%r8d, %xmm7
+[0,45]    .    . D==========eE-----------R   .    .    .   vpbroadcastd	%xmm7, %xmm7
+[0,46]    .    . D===========eeeeE-------R   .    .    .   vpmulhuw	%xmm8, %xmm7, %xmm7
+[0,47]    .    . D===============eeeeE---R   .    .    .   vpmaddwd	%xmm2, %xmm7, %xmm2
+[0,48]    .    .  D==================eE--R   .    .    .   vpsrld	$8, %xmm2, %xmm2
+[0,49]    .    .  D===================eE-R   .    .    .   vpslldq	$6, %xmm2, %xmm7
+[0,50]    .    .  D====================eER   .    .    .   vpor	%xmm2, %xmm7, %xmm2
+[0,51]    .    .  D=====================eeeeER    .    .   vpmaddwd	%xmm6, %xmm2, %xmm2
+[0,52]    .    .  D=========================eER   .    .   vpor	%xmm0, %xmm2, %xmm2
+[0,53]    .    .  D=====================eeeeE-R   .    .   vpmulhuw	%xmm11, %xmm3, %xmm7
+[0,54]    .    .   D========================eER   .    .   vpsrlw	$7, %xmm7, %xmm7
+[0,55]    .    .   D=====================eeeeER   .    .   vpmulhuw	%xmm5, %xmm3, %xmm5
+[0,56]    .    .   D=========================eER  .    .   vpsrlw	$4, %xmm5, %xmm5
+[0,57]    .    .   D==========================eER .    .   vpblendw	$170, %xmm5, %xmm3, %xmm3
+[0,58]    .    .   D=========================eeeeER    .   vpmaddwd	%xmm4, %xmm7, %xmm4
+[0,59]    .    .   D=============================eER   .   vpslld	$8, %xmm4, %xmm4
+[0,60]    .    .    D==========================eeeeER  .   vpmaddwd	%xmm6, %xmm3, %xmm5
+[0,61]    .    .    D==============================eER .   vpslld	$24, %xmm5, %xmm5
+[0,62]    .    .    D===============================eER.   vpor	%xmm4, %xmm5, %xmm4
+[0,63]    .    .    D==========================eE-----R.   vpand	%xmm1, %xmm3, %xmm1
+[0,64]    .    .    D=========================eeeeE---R.   vpmullw	%xmm6, %xmm7, %xmm3
+[0,65]    .    .    D=============================eE--R.   vpaddw	%xmm3, %xmm1, %xmm1
+[0,66]    .    .    .D=============================eE-R.   vpor	%xmm1, %xmm0, %xmm0
+[0,67]    .    .    .D==========================eeeE--R.   vpextrw	$2, %xmm2, %edx
+[0,68]    .    .    .D===========================eeeE-R.   vpextrw	$4, %xmm2, %ecx
+[0,69]    .    .    .D===============================eER   vpor	%xmm4, %xmm0, %xmm0
+[0,70]    .    .    . D===========================eeeE-R   vpextrw	$6, %xmm2, %eax
+
+
+Average Wait times (based on the timeline view):
+[0]: Executions
+[1]: Average time spent waiting in a scheduler's queue
+[2]: Average time spent waiting in a scheduler's queue while ready
+[3]: Average time elapsed from WB until retire stage
+
+      [0]    [1]    [2]    [3]
+0.     1     1.0    1.0    0.0       movl	$3518437209, %eax
+1.     1     2.0    0.0    0.0       vmovq	%rax, %xmm0
+2.     1     3.0    0.0    0.0       vpbroadcastd	%xmm0, %xmm9
+3.     1     1.0    1.0    2.0       movabsq	$42949673025535, %rax
+4.     1     4.0    2.0    0.0       vmovq	%rax, %xmm0
+5.     1     5.0    0.0    0.0       vpbroadcastq	%xmm0, %xmm10
+6.     1     1.0    1.0    3.0       movabsq	$-9223343886951898939, %rax
+7.     1     5.0    3.0    0.0       vmovq	%rax, %xmm0
+8.     1     1.0    1.0    4.0       vxorps	%xmm7, %xmm7, %xmm7
+9.     1     6.0    0.0    0.0       vpunpcklwd	%xmm7, %xmm0, %xmm8
+10.    1     1.0    1.0    5.0       movl	$-858993460, %eax
+11.    1     7.0    5.0    0.0       vmovd	%eax, %xmm0
+12.    1     7.0    0.0    0.0       vpbroadcastd	%xmm0, %xmm6
+13.    1     1.0    1.0    6.0       vpcmpeqd	%xmm1, %xmm1, %xmm1
+14.    1     2.0    0.0    5.0       vpsubw	%xmm1, %xmm7, %xmm2
+15.    1     3.0    0.0    4.0       vpsllw	$3, %xmm2, %xmm0
+16.    1     4.0    0.0    3.0       vpxor	%xmm1, %xmm0, %xmm3
+17.    1     1.0    1.0    6.0       movl	$-1546116923, %eax
+18.    1     7.0    6.0    0.0       vmovd	%eax, %xmm0
+19.    1     8.0    0.0    0.0       vpbroadcastd	%xmm0, %xmm11
+20.    1     4.0    0.0    4.0       vpxor	%xmm3, %xmm2, %xmm4
+21.    1     7.0    0.0    1.0       vpaddb	%xmm6, %xmm6, %xmm0
+22.    1     8.0    0.0    0.0       vpaddb	%xmm0, %xmm0, %xmm0
+23.    1     1.0    0.0    7.0       vpslld	$16, %xmm1, %xmm1
+24.    1     6.0    0.0    1.0       vpand	%xmm6, %xmm1, %xmm6
+25.    1     7.0    0.0    0.0       vpsubw	%xmm1, %xmm6, %xmm5
+26.    1     4.0    0.0    3.0       vpandn	%xmm4, %xmm1, %xmm4
+27.    1     1.0    0.0    6.0       vpand	%xmm2, %xmm1, %xmm2
+28.    1     5.0    0.0    2.0       vpor	%xmm2, %xmm4, %xmm4
+29.    1     8.0    2.0    0.0       vpxor	%xmm3, %xmm4, %xmm6
+30.    1     1.0    1.0    6.0       movabsq	$72058143794266113, %rax
+31.    1     7.0    5.0    0.0       vmovq	%rax, %xmm2
+32.    1     8.0    0.0    0.0       vpunpcklwd	%xmm7, %xmm2, %xmm2
+33.    1     9.0    9.0    0.0       vmovd	%edi, %xmm3
+34.    1     10.0   10.0   0.0       vmovd	%edx, %xmm7
+35.    1     11.0   0.0    0.0       vpunpcklqdq	%xmm3, %xmm7, %xmm3
+36.    1     11.0   0.0    0.0       vpmuludq	%xmm3, %xmm9, %xmm7
+37.    1     15.0   0.0    0.0       vpsrlq	$13, %xmm7, %xmm7
+38.    1     16.0   0.0    0.0       vpshufd	$245, %xmm7, %xmm7
+39.    1     17.0   0.0    0.0       vpmaddwd	%xmm10, %xmm7, %xmm7
+40.    1     11.0   0.0    9.0       vpsllq	$32, %xmm3, %xmm3
+41.    1     21.0   0.0    0.0       vpsubd	%xmm7, %xmm3, %xmm3
+42.    1     21.0   0.0    0.0       vpslld	$17, %xmm3, %xmm7
+43.    1     22.0   0.0    0.0       vpor	%xmm3, %xmm7, %xmm3
+44.    1     10.0   10.0   12.0      vmovd	%r8d, %xmm7
+45.    1     11.0   0.0    11.0      vpbroadcastd	%xmm7, %xmm7
+46.    1     12.0   0.0    7.0       vpmulhuw	%xmm8, %xmm7, %xmm7
+47.    1     16.0   0.0    3.0       vpmaddwd	%xmm2, %xmm7, %xmm2
+48.    1     19.0   0.0    2.0       vpsrld	$8, %xmm2, %xmm2
+49.    1     20.0   0.0    1.0       vpslldq	$6, %xmm2, %xmm7
+50.    1     21.0   0.0    0.0       vpor	%xmm2, %xmm7, %xmm2
+51.    1     22.0   0.0    0.0       vpmaddwd	%xmm6, %xmm2, %xmm2
+52.    1     26.0   0.0    0.0       vpor	%xmm0, %xmm2, %xmm2
+53.    1     22.0   0.0    1.0       vpmulhuw	%xmm11, %xmm3, %xmm7
+54.    1     25.0   0.0    0.0       vpsrlw	$7, %xmm7, %xmm7
+55.    1     22.0   1.0    0.0       vpmulhuw	%xmm5, %xmm3, %xmm5
+56.    1     26.0   0.0    0.0       vpsrlw	$4, %xmm5, %xmm5
+57.    1     27.0   0.0    0.0       vpblendw	$170, %xmm5, %xmm3, %xmm3
+58.    1     26.0   0.0    0.0       vpmaddwd	%xmm4, %xmm7, %xmm4
+59.    1     30.0   0.0    0.0       vpslld	$8, %xmm4, %xmm4
+60.    1     27.0   0.0    0.0       vpmaddwd	%xmm6, %xmm3, %xmm5
+61.    1     31.0   0.0    0.0       vpslld	$24, %xmm5, %xmm5
+62.    1     32.0   0.0    0.0       vpor	%xmm4, %xmm5, %xmm4
+63.    1     27.0   0.0    5.0       vpand	%xmm1, %xmm3, %xmm1
+64.    1     26.0   1.0    3.0       vpmullw	%xmm6, %xmm7, %xmm3
+65.    1     30.0   0.0    2.0       vpaddw	%xmm3, %xmm1, %xmm1
+66.    1     30.0   0.0    1.0       vpor	%xmm1, %xmm0, %xmm0
+67.    1     27.0   3.0    2.0       vpextrw	$2, %xmm2, %edx
+68.    1     28.0   4.0    1.0       vpextrw	$4, %xmm2, %ecx
+69.    1     32.0   0.0    0.0       vpor	%xmm4, %xmm0, %xmm0
+70.    1     28.0   5.0    1.0       vpextrw	$6, %xmm2, %eax
